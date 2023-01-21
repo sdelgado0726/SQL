@@ -1,4 +1,4 @@
---Created a grocery store database
+# Created a grocery store database
 
 CREATE TABLE store (id INTEGER PRIMARY KEY, item TEXT, aisle INTEGER, price INTEGER, category Text);
 
@@ -19,10 +19,10 @@ INSERT INTO store VALUES
 (14, "Sugar", 8, 5, "Baking"),
 (15, "Gummy Worms", 10, 5, "Candy");
 
---Displayed the database where price is less than or equal to 5 and ordered list by price
+# Displayed the database where price is less than or equal to 5 and ordered list by price
 
 SELECT * FROM store WHERE price <= 5 ORDER BY price;
 
---What is the total sum of all prices?
+# What is the total sum of all prices?
 
 SELECT SUM(price) FROM store;
