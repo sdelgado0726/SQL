@@ -1,0 +1,28 @@
+--Created a grocery store database
+
+CREATE TABLE store (id INTEGER PRIMARY KEY, item TEXT, aisle INTEGER, price INTEGER, category Text);
+
+INSERT INTO store VALUES
+(1, "Carrots", 5, 2.5, "Produce"),
+(2, "Steak", 4, 15, "Meat"),
+(3, "Blueberries", 5, 3, "Produce"),
+(4, "Peanut Butter", 7, 5, "Nuts"),
+(5, "Snickers", 10, 1.5, "Candy"),
+(6, "Twizzlers", 10, 2, "Candy"),
+(7, "Almond Butter", 7, 6, "Nuts"),
+(8, "Rice", 8, 10, "Grain"),
+(9, "Quinoa", 8, 12, "Grain"),
+(10, "Corn", 5, 4.5, "Produce"),
+(11, "Salt", 3, 0.50, "Condiments"),
+(12, "Pepper", 3, 0.50, "Condiments"),
+(13, "Flour", 8, 5, "Baking"),
+(14, "Sugar", 8, 5, "Baking"),
+(15, "Gummy Worms", 10, 5, "Candy");
+
+--Displayed the database where price is less than or equal to 5 and ordered list by price
+
+SELECT * FROM store WHERE price <= 5 ORDER BY price;
+
+--What is the total sum of all prices?
+
+SELECT SUM(price) FROM store;
